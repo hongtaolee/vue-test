@@ -24,14 +24,17 @@ vue init webpack  my-project-name   # 初始化项目名，初始化建议使用
 ? Setup unit tests with Karma + Mocha? No
 ? Setup e2e tests with Nightwatch? No
 
-
 cd my-project-name
 cnpm install  # 类似于rails 里面的 bundle install
-cnpm install --save element-ui
 cnpm run dev  # 类似于rails 里面的 rails s
 ```
-## 修改App.vue
-1. <script> 中增加
+## element-ui
+1、通过cnpm安装element-ui，如果package.json 中已经安装了，则跳过此步骤
+
+```shell
+cnpm install --save element-ui
+```
+2. App.vue 中 <script> 中增加
 	
 ```shell
 import Vue from 'vue'
